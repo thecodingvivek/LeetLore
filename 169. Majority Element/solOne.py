@@ -10,3 +10,4 @@ for i in nums:
     if d[i] >= len(nums)/2:
         print(i)
         break
+    
