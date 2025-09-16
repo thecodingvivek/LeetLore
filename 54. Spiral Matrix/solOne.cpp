@@ -10,6 +10,8 @@ int main(){
     int pointerh=0;
     int pointerv=0;
 
+
+    ///some random shit
     bool verticalrev = false;
     bool horizontalrev = false;
 
