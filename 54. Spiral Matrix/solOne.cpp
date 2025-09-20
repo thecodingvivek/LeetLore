@@ -12,7 +12,8 @@ int main(){
 
 
     ///some random shit
-    //every day random shit
+    //every day random 
+    //another day same shit
     bool verticalrev = false;
     bool horizontalrev = false;
 
