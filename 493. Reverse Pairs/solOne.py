@@ -1,7 +1,20 @@
 nums = [1,3,2,3,1]
 
+#[1,2,3] 
+#[1,3]
+
+count=[0]
+def getPair(fhalf,rhalf):
+    j=0
+    for i in range(len(fhalf)):
+        while j < len(rhalf) and rhalf[j]*2 < fhalf[i]:
+                j+=1
+        count[0]+=j
+
+
 
 def merge(fhalf,shalf):
+    getPair(fhalf,shalf)
     i = 0
     j= 0
     arr=[]
@@ -9,7 +22,7 @@ def merge(fhalf,shalf):
         if fhalf[i] < shalf[j]:
             arr.append(fhalf[i])
             i+=1
-        elif shalf[j] < fhalf[i]:
+        else:
             arr.append(shalf[j])
             j+=1
     
@@ -32,4 +45,5 @@ def mergeSort(nums):
     shalf = mergeSort(nums[mid:])
     return merge(fhalf,shalf)
 
-print(mergeSort(nums))
+mergeSort(nums)
+print(count)
