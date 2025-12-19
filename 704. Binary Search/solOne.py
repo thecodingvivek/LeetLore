@@ -11,4 +11,3 @@ while i<=j:
         j = mid - 1
     else:
         i = mid+1
-    
