@@ -6,8 +6,6 @@ i=0
 j=len(nums)-1
 ans=0
 end=0
-if len(nums)==0:
-    exit()
 
 while i<=j:
     mid = (i+j)//2
@@ -28,6 +26,6 @@ while i<=j:
         j=mid-1
 
 if len(nums)==0 or nums[ans]!=target or nums[end]!=target:
-    return [-1,-1]
+     print([-1,-1])
 
-return [ans,end]
+print([ans,end])
