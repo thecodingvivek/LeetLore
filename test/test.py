@@ -1,2 +1,3 @@
 t="l"
-print(t[:-1])
+d={"o":"k"}
+print(d.get("l"))
