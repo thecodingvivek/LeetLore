@@ -8,7 +8,7 @@ ss = 0
 tt=0
 
 for i in s:
-    if d.get(i):
+    if i in d:
         inits = (inits * 10) + d.get(i)
     else:
         ss+=1
@@ -18,7 +18,7 @@ for i in s:
 d={}
 
 for i in t:
-    if d.get(i):
+    if i in d:
         initt = (initt * 10) + d.get(i)
     else:
         tt+=1
