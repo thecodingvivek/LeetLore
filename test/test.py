@@ -1,3 +1,3 @@
-t="l"
-d={"o":"k"}
-print(d.get("l"))
+k = 10
+
+print(int(k%10))
