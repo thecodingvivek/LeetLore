@@ -51,7 +51,7 @@ class LinkedList:
 
 
 if __name__ == "__main__":
-    head = [2]
+    head = [4,2,1,3]
     ll = LinkedList(head[0])
     for i in range(1,len(head)):
         ll.insert(head[i])
