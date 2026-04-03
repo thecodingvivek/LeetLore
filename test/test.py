@@ -1,3 +1,3 @@
-k = 10
+import re
 
-print(int(k%10))
+print(re.match("[0-9]","1"))
