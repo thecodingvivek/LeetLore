@@ -1,19 +1,19 @@
 def myPow(x, n):
-    temp = n
-    def helper(i,var):
-        if i == 0:
-            return 1
+    if n == 0:
+        return 1
 
-        if i == 1:
-            return x
-       
-        if i%2 == 0:
-            half = helper(i//2,x)
-            return half * half
-        else:
-            half = (helper(i//2,x))
-            return half * half * x
+    if n == 1:
+        return x
 
-    return helper(temp,x)
+    if n<0:
+        return 1/myPow(x,-n)
+    
+    half = myPow(x,n//2)
+
+    if n%2 == 0:
+        return half * half
+    else:
+        return half * half * x
+
 
 print(myPow(10,2))
